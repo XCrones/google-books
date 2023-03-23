@@ -35,7 +35,7 @@ export class BooksApiStore {
       const queries = `${meta.search.trim()}+intitle&orderBy=${meta.orderBy.trim()}&subject=${meta.category.trim()}&startIndex=${Math.max(0, this._indexPage)}&maxResults=${Math.max(10, this._maxResults)}`;
 
       // prettier-ignore
-      const { data } = await axios.get<IBooks>(`/volumes?q=${queries}&key=${import.meta.env.VITE_APP_API_KEY1}`);
+      const { data } = await axios.get<IBooks>(`/volumes?q=${queries}&key=${import.meta.env.VITE_APP_API_KEY}`);
 
       if (Object.prototype.hasOwnProperty.call(data, "items") === true) {
         if (meta.search != this._lastResponse.search) {
@@ -94,7 +94,7 @@ export class BooksApiStore {
         return book;
       }
 
-      const { data } = await axios.get<IBook>(`/volumes/${id.trim()}?key=${import.meta.env.VITE_APP_API_KEY1}`);
+      const { data } = await axios.get<IBook>(`/volumes/${id.trim()}?key=${import.meta.env.VITE_APP_API_KEY}`);
 
       if (!!data) {
         return data;
