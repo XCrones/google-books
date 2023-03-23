@@ -1,0 +1,25 @@
+.book {
+  &__image {
+    flex: 0 0 50%;
+  }
+
+  &__about {
+    flex: 0 0 50%;
+  }
+
+  &__categories {
+    font-size: 14px;
+  }
+
+  &__title {
+    font-size: 14px;
+  }
+
+  &__description {
+    font-size: 12px;
+  }
+
+  &__authors {
+    font-size: 10px;
+  }
+}

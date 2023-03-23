@@ -1,0 +1,30 @@
+.book {
+  &:nth-child(2n + 2) {
+    background: linear-gradient(90deg, #4c474e 0%, #3a4097 100%);
+  }
+  &:nth-child(3n + 3) {
+    background: linear-gradient(90deg, #809912 0%, #008552 100%);
+  }
+  &:nth-child(4n + 4) {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  }
+
+  &__img {
+    height: 250px;
+  }
+
+  &__categories {
+    min-height: 25px;
+    font-size: 13px;
+  }
+
+  &__title {
+    max-width: 150px;
+  }
+
+  &__authors {
+    min-height: 40px;
+    font-size: 13px;
+    max-height: 40px;
+  }
+}

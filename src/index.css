@@ -1,0 +1,12 @@
+.font-iter {
+  font-family: "Inter", sans-serif;
+}
+
+@keyframes t-from-b {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
